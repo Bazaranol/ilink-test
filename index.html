@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/fonts.css">
+    <title>Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="/images/Vector.svg" alt="O">
+                <img src="/images/Vector 2.svg" alt="O">
+            </div>
+            <div class="navigation">
+                <span><a href="#Jane">Jane Doe</a></span>
+                <span><a href="#Feedback">Tell us about yourself</a></span>
+                <span><a href="#Slider">Slider</a></span>
+            </div>
+        </div>
+    </header>
+    <div class="content" id="Jane">
+        <img class="box1" src="/images/Rectangle 8.svg" alt="">
+        <img class="box2" src="/images/Rectangle 7.svg" alt="">
+        <div class="portfolio">
+            <img src="/images/Rectangle 1.svg" alt="Alt">
+            <div class="description">
+                <h1 id="Name">Jane Doe</h1>
+                <div class="info-container">
+                    <div class="info">
+                        <div>
+                            <span class="colored">Date of Birth</span><span>21.04.2001</span>
+                        </div>
+                        <div><span class="colored">Gender</span> <span>Female</span></div>
+                        <div><span class="colored">Country</span> <span>Corea</span></div>
+                    </div>
+                    <h2>About me</h2>
+                    <div class="textArea">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea
+                            commodo consequat.
+                        </p>
+                        <p>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feedback" id="Feedback">
+        <h1>Tell us about yourself</h1>
+        <form class="formValidation">
+            <div class="firstValid">
+                <div>
+                    <div><label>Your name</label></div>
+                    <input placeholder="Tell us your name" type="text" id="name" class="validationInput">
+                </div>
+                <div>
+                    <div><label>Your gender</label></div>
+                    <select name="gender" id="gender" class="validationInput">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="secondValid">
+                <div class="cV1">
+                    <div><label>Your country</label></div>
+                    <input placeholder="Where are you from?" type="text" id="country" class="validationInput cVc1">
+                </div>
+                <div class="cV2">
+                    <div><label>Your City</label></div>
+                    <input placeholder="What's your city?" type="text" id="city" class="validationInput cVc2">
+                </div>
+                <div class="cV3">
+                    <div><label>Your date of birth</label></div>
+                    <input type="date" id="birthday" class="validationInput cVc3">
+                </div>
+            </div>
+            <div class="fileBox">
+                <div>
+                    <label>Proof your identity with some documents</label>
+                    <input type="file" id="file" class="inputfile" name="file">
+                    <label for="file">Add document</label>
+                </div>
+            </div>
+            <div class="sendButton">
+                <button type="button" onclick="complete()" id="btnValidate" disabled>Send info</button>
+                <div id="completed"><img src="/images/Group 371.svg" alt="Ok">Completed</div>
+            </div>
+        </form>
+    </div>
+
+    <div class="slider-container" id="Slider">
+        <div class="slider">
+            <div class="slider-prev"><img class="sliderBtn" src="/images/Vector 3.svg" alt=""></div>
+            <div class="slider-next"><img class="sliderBtn" src="/images/Vector 4.svg" alt=""></div>
+            <div class="slider-line">
+                <img class="firstSlide" src="/images/Rectangle 10.png" alt="">
+                <img class="secondSlide" src="/images/Rectangle 11.png" alt="">
+                <img class="thirdSlide" src="/images/Rectangle 12.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/index.js"></script>
+
+</html>

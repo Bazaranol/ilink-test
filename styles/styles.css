@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    background: #F8F3FF;
+    font-family: Montserrat;
+    font-size: 16px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: relative;
+    top: 0;
+    min-height: 56px;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+}
+
+header  ul{
+    padding: 0;
+    padding-left: 64px;
+}
+.header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    margin-left: 64px;
+}
+.navigation{
+    margin-right: 176px;
+}
+span a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #8E43ED;
+    margin-left: 32px;
+}
+.content{
+    background: #fff;
+    padding-top: 100px;
+    padding-left: 64px;
+    padding-bottom: 100px;
+    border-radius: 200px 0px;
+}
+.info{
+    display: flex;
+}
+
+.box1{
+    position: absolute;
+    top: 605px;
+    left: 10px;
+    background: transparent;
+}
+.box2{
+    position: absolute;
+    top: 700px;
+    left: 10px;
+    background: transparent;
+}
+.portfolio{
+    display: flex;
+    align-items: flex-start;
+    background-color: transparent;
+}
+.portfolio *{
+    background-color: transparent;
+}
+.portfolio > img{
+    max-width: 528;
+    border-radius: 32px;
+    margin-right: 32px;
+}
+#Name{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 72px;
+}
+.description{
+    margin-top: 44px;
+}
+.info-container{
+    margin-top: 24px;
+}
+.info-container > h2{
+    font-size: 27px;
+    line-height: 36px;
+    margin-top: 64px;
+    margin-bottom: 24px;
+}
+.info > div{
+    margin-right: 24px;
+}
+.info > div > span{
+    margin-right: 8px;
+    font-weight: 600;
+}
+.colored{
+    color: #8E43ED;
+}
+.textArea p{
+    max-width: 640px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+p + p{
+    margin-top: 24px;
+}
+.feedback{
+    min-height: 650px;
+    padding: 64px;
+}
+.feedback > h1 {
+    font-size: 40px;
+    line-height: 72px;
+    margin-bottom: 40px;
+}
+.formValidation{
+    z-index: 3;
+}
+.firstValid, .secondValid{
+    display: flex;
+    flex-wrap: wrap;
+}
+.firstValid *, .secondValid * {
+    margin-right: 32px;
+}
+.validationInput{
+    height: 56px;
+    width: 304px;
+    border-radius: 12px;
+    border-color: #8E43ED;
+    background: #fff;
+}
+input{
+    padding-left: 10px;
+    margin-bottom: 40px;
+    outline: none;
+}
+#btnValidate{
+    width: 212px;
+    height: 56px;
+    border-radius: 12px;
+    background: #8E43ED;
+    color: #fff;
+    border-style: none;
+    cursor:pointer;
+    margin: 0;
+    margin-right: 24px;
+}
+#btnValidate:disabled {
+    background: #DED9E4;
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+.fileBox{
+    display: flex;
+    flex-direction: row;
+    min-height: 100px;
+    max-width: 976px;
+    background: #fff;
+    color: gray;
+    border-radius: 12px;
+    border: dashed #D9BBFF;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 112px;
+    margin-top: 16px;
+}
+.fileBox * {
+    background: #fff;
+}
+.cV1, .cVc1, .cV2, .cVc2, .cV3, .cVc3{
+    display: none;
+}
+#completed{
+    display:none;
+    flex-direction: row;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+.sendButton{
+    display: flex;
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    margin-left: 20px;
+    cursor: pointer;
+    color: #8E43ED;
+    border: 2px solid #8E43ED;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: #F8F3FF;
+}
+.slider-container{
+    background: #fff;
+    padding: 56px 64px 56px 64px;
+}
+.slider{
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slider-line{
+    display: flex;
+    transition: all ease 1s;
+}
+.slider-prev{
+    left: 0;
+    align-self: center;
+    position: absolute;
+    margin-left: 32px;
+    background-color: transparent;
+    z-index: 2;
+}
+.slider-next{
+    position: absolute;
+    margin-right: 32px;
+    background-color: transparent;
+    z-index: 2;
+    align-self: center;
+    right: 0;
+}
+.sliderBtn{
+    background-color: transparent;
+}
+@media (max-width:992px){
+    .portfolio{
+        display: block;
+    }
+}
+@media (max-width:780px){
+    .navigation{
+        display: none;
+    }
+    .header{
+        justify-content: center;
+    }
+    .content{
+        border-radius: 0px;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .box1, .box2{
+        display: none;
+    }
+    input{
+        margin-bottom: 0;
+    }
+    .firstValid > div, .secondValid > div{
+        margin-bottom: 40px;
+    }
+    .slider{
+        height: 535px;
+    }
+    /* .firstSlide{
+        background: url(/images/Rectangle\ 10.svg);
+    }
+    .secondSlide{
+        background: url(/images/Rectangle\ 13.svg);
+    }
+    .thirdSlide{
+        background: url(/images/Rectangle\ 14.svg);
+    } */
+} 
